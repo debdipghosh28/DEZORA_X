@@ -1635,7 +1635,7 @@ footer {
     100% { background-position: 100%; }
 }
 
-@media (max-width: 480px) {
+@media screen and (min-width:0px) and (max-width: 433px) {
 
     .box2 {
         padding: 0;
@@ -1937,4 +1937,5 @@ footer {
                     position: relative;
                 }
             }
+
         }
