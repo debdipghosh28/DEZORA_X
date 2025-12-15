@@ -1846,7 +1846,7 @@ footer {
                 }
                 footer {
                         background: url(Screenshot\ 2025-12-15\ 200042.png);
-                        
+                        background-size:cover;
                         color: white;
                         height: 105vh;
                         width: 100vw;
@@ -1938,5 +1938,6 @@ footer {
             }
 
         
+
 
 
