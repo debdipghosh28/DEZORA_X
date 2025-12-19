@@ -12,9 +12,10 @@
         <nav style="display: flex;
         justify-content: space-between;
         padding: 30px;position: fixed;    z-index: 99;
-        position: absolute;">
+        position: absolute;width:100% ;">
             <div class="logo" > DEZORA_X</div>
-                       
+                      
+
             <div class="nav-links" >
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -22,7 +23,39 @@
                 <a href="#our-usp">Our USP</a>
                 <a href="#contact">Contact</a>
             </div>
+            <div class="parent-mobile-nav hidden">
+                <div class="" id="mobile-nav" >
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Products</a>
+                <a href="#our-usp">Our USP</a>
+                <a href="#contact">Contact</a>
+                </div>
+            </div>
+            
+            <button onclick="showSidebar()" style="
+            position: absolute;
+            right: 5%;
+            appearance: none;
+            background: transparent;
+            border: none;
+        ">
+                 <img src="hamberger.png" class="mobileham" alt="menu" width="30px">
+            </button>
         </nav>
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.parent-mobile-nav');
+                const hammenu = document.querySelector('.mobileham');
+                // console.log(sidebar.style.display);
+                sidebar.classList.toggle('hidden');
+                if(sidebar.classList.contains('hidden')){
+                    hammenu.src = 'hamberger.png';
+                }else{
+                    hammenu.src = 'cross1.png';                }
+
+            }
+        </script>
     
     <div class="mainbox">
         <div class="box1">
@@ -99,7 +132,7 @@
 <!-- projects  -->
 
 
-<div class="container">
+<div class="container"id="projects">
     <div class="section-title">
         <h1>OUR PRODUCTS</h1>
         <div class="blue-underline"></div>
@@ -112,9 +145,9 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="product-images" data-product="0">
-                        <div class="product-image-slide">📱</div>
-                        <div class="product-image-slide">📺</div>
-                        <div class="product-image-slide">🎯</div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
                     </div>
                     <div class="image-dots" data-product="0">
                         <div class="image-dot active"></div>
@@ -143,9 +176,9 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="product-images" data-product="1">
-                        <div class="product-image-slide">🎨</div>
-                        <div class="product-image-slide">🖼️</div>
-                        <div class="product-image-slide">✨</div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
                     </div>
                     <div class="image-dots" data-product="1">
                         <div class="image-dot active"></div>
@@ -174,9 +207,9 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="product-images" data-product="2">
-                        <div class="product-image-slide">💌</div>
-                        <div class="product-image-slide">🎁</div>
-                        <div class="product-image-slide">👑</div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
                     </div>
                     <div class="image-dots" data-product="2">
                         <div class="image-dot active"></div>
@@ -205,9 +238,9 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="product-images" data-product="3">
-                        <div class="product-image-slide">📸</div>
-                        <div class="product-image-slide">🖌️</div>
-                        <div class="product-image-slide">✂️</div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
                     </div>
                     <div class="image-dots" data-product="3">
                         <div class="image-dot active"></div>
@@ -236,9 +269,9 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="product-images" data-product="4">
-                        <div class="product-image-slide">💝</div>
-                        <div class="product-image-slide">🎉</div>
-                        <div class="product-image-slide">🌟</div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
                     </div>
                     <div class="image-dots" data-product="4">
                         <div class="image-dot active"></div>
@@ -267,9 +300,9 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="product-images" data-product="5">
-                        <div class="product-image-slide">🍽️</div>
-                        <div class="product-image-slide">🥘</div>
-                        <div class="product-image-slide">🍴</div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
                     </div>
                     <div class="image-dots" data-product="5">
                         <div class="image-dot active"></div>
@@ -512,7 +545,7 @@
                 <div class="footer-content">
                     <!-- Brand Section -->
                     <div class="footer-section">
-                        <div class="footer-logo">Dexora x</div>
+                        <div class="footer-logo">Dezora_x</div>
                         <div class="footer-tagline">Built. Customized. Together.</div>
                         <div class="footer-copyright">©2026 Dezora_x All rights reserved</div>
                         <div class="legal-links">
@@ -580,6 +613,4 @@
         
     
 </body>
-
 </html>
-
