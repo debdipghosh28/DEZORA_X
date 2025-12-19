@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body{
-    overflow-x:hidden;
     background-color: #ffffff;
     /* background-image: url(bg.jpg); */
 }
@@ -688,7 +687,291 @@ h1 {
 
 
 
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
+        .section-title h1 {
+            font-size: 48px;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #888;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .blue-underline {
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #0099cc, #00ccff);
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background: white;
+            border-radius: 15px;
+            padding: 40px 20px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .carousel-wrapper {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+
+        .product-card {
+            border: 2px solid #d0e8f2;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #fafbfc;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            transition: all 0.5s ease;
+            transform: translateY(0);
+            opacity: 1;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08), 0 0 20px rgba(0, 153, 204, 0.3);
+            position: relative;
+            animation: glowPulse 2.5s ease-in-out infinite;
+        }
+
+        @keyframes glowPulse {
+            0% {
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08), 0 0 20px rgba(0, 153, 204, 0.3);
+                border-color: #d0e8f2;
+            }
+            50% {
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08), 0 0 40px rgba(0, 153, 204, 0.6);
+                border-color: #0099cc;
+            }
+            100% {
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08), 0 0 20px rgba(0, 153, 204, 0.3);
+                border-color: #d0e8f2;
+            }
+        }
+
+        .product-card:hover {
+            box-shadow: 0 12px 35px rgba(0, 153, 204, 0.4), 0 0 50px rgba(0, 153, 204, 0.8);
+            transform: translateY(-8px);
+            border-color: #0099cc;
+            animation: glowPulse 1.5s ease-in-out infinite;
+        }
+
+        .product-image-container {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #e8f4f8 0%, #d0e8f2 100%);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-images {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            transition: transform 0.6s ease-in-out;
+        }
+
+        .product-image-slide {
+            min-width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            animation: fadeInOut 1s ease-in-out;
+        }
+
+        @keyframes fadeInOut {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 1; }
+        }
+
+        .image-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 6px;
+            z-index: 5;
+        }
+
+        .image-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .image-dot.active {
+            background: white;
+            width: 14px;
+            border-radius: 3px;
+        }
+
+        .product-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+        }
+
+        .product-info {
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 22px;
+            color: #0099cc;
+            margin-bottom: 12px;
+            font-weight: 700;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .features {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .feature-tag {
+            border: 1.5px solid #0099cc;
+            color: #0099cc;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 11px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .feature-tag:hover {
+            background: #0099cc;
+            color: white;
+        }
+
+        .product-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .cta-button {
+            background: #3fa9b8;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 18px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #2f8a96;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(63, 169, 184, 0.4);
+        }
+
+        .soft-copy {
+            background: #c8e6ef;
+            color: #0099cc;
+            padding: 8px 14px;
+            border-radius: 15px;
+            font-size: 11px;
+            font-weight: 600;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .tagline {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: linear-gradient(135deg, #e8f4f8 0%, #f0f8fb 100%);
+            border: 2px solid #d0e8f2;
+            border-radius: 15px;
+            font-size: 20px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .tagline strong {
+            color: #0099cc;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 1024px) {
+            .carousel-wrapper {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .carousel-container {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .carousel-container {
+                padding: 25px 20px;
+            }
+
+            .section-title h1 {
+                font-size: 32px;
+            }
+
+            .card-title {
+                font-size: 18px;
+            }
+
+            .card-description {
+                font-size: 13px;
+            }
+
+            .product-image-container {
+                height: 150px;
+            }
+
+            .product-image-slide {
+                font-size: 60px;
+            }
+        }
 
 
 
@@ -1147,7 +1430,7 @@ footer {
 
 .cta-button {
     display: inline-block;
-    padding: 9px 11px;
+    padding: 7px 47px;
     background: linear-gradient(135deg, #ffffff 0%, #f0f9fc 100%);
     color: #17a2b8;
     text-decoration: none;
@@ -1165,6 +1448,7 @@ footer {
     letter-spacing: 1px;
     text-transform: uppercase;
     backdrop-filter: blur(10px);
+    font-family: system-ui;
 }
 
 .cta-button::before {
@@ -1847,7 +2131,6 @@ footer {
                 }
                 footer {
                         background: url(Screenshot\ 2025-12-15\ 200042.png);
-                        background-size:cover;
                         color: white;
                         height: 105vh;
                         width: 100vw;
@@ -1937,9 +2220,4 @@ footer {
                     position: relative;
                 }
             }
-
         
-
-
-
-
