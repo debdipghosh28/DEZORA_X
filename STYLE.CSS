@@ -967,7 +967,7 @@ h1 {
             .product-image-container {
                 height: 150px;
                 margin-left: 26px;
-                width: 54vw;
+                width: 62vw;
             }
 
             .product-image-slide {
@@ -2191,13 +2191,13 @@ footer {
                     overflow: hidden;
                 }
                 footer {
-                        background: url(Screenshot\ 2025-12-15\ 200042.png);
-                        color: white;
-                        background-size: cover;
-                        height: 85vh;
-                        width: 100vw;
-                        padding: 50px 60px;
-                    }
+                    background: url(Screenshot\ 2025-12-15\ 200042.png);
+                    color: white;
+                    background-size: cover;
+                    height: 103vh;
+                    width: auto;
+                    padding: 40px 20px;
+                }
                 .footer-content {
                     display: flex;
                     flex-direction: column;
