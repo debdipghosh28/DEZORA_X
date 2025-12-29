@@ -22,6 +22,10 @@
                 <a href="#projects">Products</a>
                 <a href="#our-usp">Our USP</a>
                 <a href="#contact">Contact</a>
+                <!-- <button class="theme-toggle-btn" id="themeToggleBtn">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </button> -->
             </div>
             <div class="parent-mobile-nav hidden">
                 <div class="" id="mobile-nav" >
@@ -56,6 +60,35 @@
 
             }
         </script>
+          <!-- <script>
+            // Simple toggle functionality
+            document.addEventListener('DOMContentLoaded', function() {
+                const toggleBtn = document.getElementById('themeToggleBtn');
+                const body = document.body;
+                
+                // Check for saved theme preference
+                const savedTheme = localStorage.getItem('theme');
+                
+                // Set initial theme
+                if (savedTheme === 'dark') {
+                    body.classList.add('dark');
+                    toggleBtn.classList.add('dark');
+                } else {
+                    body.classList.remove('dark');
+                    toggleBtn.classList.remove('dark');
+                }
+                
+                // Toggle theme on button click
+                toggleBtn.addEventListener('click', function() {
+                    body.classList.toggle('dark');
+                    toggleBtn.classList.toggle('dark');
+                    
+                    // Save preference
+                    const isDark = body.classList.contains('dark');
+                    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                });
+            });
+        </script> -->
     
     <div class="mainbox">
         <div class="box1">
@@ -150,9 +183,13 @@
                         <div class="product-image-slide"><img src="strawberry_poster_290x200.jpg" alt=""></div>
                         <div class="product-image-slide"><img src="perfume.jpeg" alt=""></div>
                         <div class="product-image-slide"><img src="swiggy.jpeg" alt=""></div>
+                        <div class="product-image-slide"><img src="ALL.png" alt=""></div>
+                        <div class="product-image-slide"><img src="IPHONE .jpeg" alt=""></div>
                     </div>
                     <div class="image-dots" data-product="0">
                         <div class="image-dot active"></div>
+                        <div class="image-dot"></div>
+                        <div class="image-dot"></div>
                         <div class="image-dot"></div>
                         <div class="image-dot"></div>
                     </div>
@@ -187,10 +224,12 @@
                         <div class="product-image-slide"><img src="dhurandhar_290x200.png" alt=""></div>
                         <div class="product-image-slide"><img src="chatpate_pani_puri_290x200.png" alt=""></div>
                         <div class="product-image-slide"><img src="marvel_spidey_290x200 (1).png" alt=""></div>
+                        <div class="product-image-slide"><img src="POSTR .jpeg" alt=""></div>
 
                     </div>
                     <div class="image-dots" data-product="1">
                         <div class="image-dot active"></div>
+                        <div class="image-dot"></div>
                         <div class="image-dot"></div>
                         <div class="image-dot"></div>
                         <div class="image-dot"></div>
@@ -224,10 +263,14 @@
                     <div class="product-images" data-product="2">
                         <div class="product-image-slide"><img src="engagement_invite_290x200.png" alt=""></div>
                         <div class="product-image-slide"><img src="HALDI .jpeg" alt=""></div>
-                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="BUSINEESS.jpeg" alt=""></div>
+                        <div class="product-image-slide"><img src="ganesh_chaturthi_290x200.png" alt=""></div>
+                        <div class="product-image-slide"><img src="BUSINESS 1.png" alt=""></div>
                     </div>
                     <div class="image-dots" data-product="2">
                         <div class="image-dot active"></div>
+                        <div class="image-dot"></div>
+                        <div class="image-dot"></div>
                         <div class="image-dot"></div>
                         <div class="image-dot"></div>
                     </div>
@@ -286,9 +329,7 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="product-images" data-product="4">
-                        <div class="product-image-slide"><img src="ganesh_chaturthi_290x200.png" alt=""></div>
-                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
-                        <div class="product-image-slide"><img src="Gemini_Generated_Image_25eb3425eb3425eb.png" alt=""></div>
+                        <div class="product-image-slide"><img src="" alt=""></div>
                     </div>
                     <div class="image-dots" data-product="4">
                         <div class="image-dot active"></div>
@@ -298,12 +339,12 @@
                 </div>
                 <div class="product-content">
                     <div class="product-info">
-                        <h2 class="card-title">GREETING CARDS</h2>
-                        <p class="card-description">Thoughtful and artistic greeting cards perfect for every occasion and emotion.</p>
+                        <h2 class="card-title">FLYER DESIGNS </h2>
+                        <p class="card-description">Creative flyer designs that grab attention, deliver impact, and leave a lasting impression.</p>
                         <div class="features">
-                            <span class="feature-tag">Personalized</span>
-                            <span class="feature-tag">Artistic</span>
-                            <span class="feature-tag">All Occasions</span>
+                            <span class="feature-tag">premium</span>
+                            <span class="feature-tag">marketing-focused</span>
+                            <span class="feature-tag">modern/minima</span>
                         </div>
                     </div>
                     <div class="product-actions">
@@ -321,9 +362,11 @@
                         <div class="product-image-slide"><img src="menu2.jpeg" alt=""></div>
                         <div class="product-image-slide"><img src="menu3.jpeg" alt=""></div>
                         <div class="product-image-slide"><img src="menu4.jpeg" alt=""></div>
+                        <div class="product-image-slide"><img src="MENU5.jpeg" alt=""></div>
                     </div>
                     <div class="image-dots" data-product="5">
                         <div class="image-dot active"></div>
+                        <div class="image-dot"></div>
                         <div class="image-dot"></div>
                         <div class="image-dot"></div>
                         <div class="image-dot"></div>
@@ -633,6 +676,4 @@
         
     
 </body>
-
 </html>
-
