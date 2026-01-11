@@ -18,6 +18,12 @@ body{
     color: black;
     text-decoration: none;
 }
+.about-section{
+    background-image: url(nordwood-themes-kRNZiGKtz48-unsplash.jpg);
+    width: auto;
+    height: 140vh;
+    background-size: 210vh;
+}
 .logo{
     font-size: 20px;
     font-family: sans-serif;
@@ -58,7 +64,7 @@ body{
 .box2{
     width: 45vw;
     padding: 0px 127px;
-    height: 100vh;
+    height: 105vh;
     margin-left: 9em;
     background-color: #E8F6FF;
 }
@@ -102,7 +108,9 @@ h1 {
 .container1 {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    background: #3080ac1c;
+    padding: 1rem 2rem;
+
 }
 
 .hero-section {
@@ -704,6 +712,7 @@ h1 {
             color: #1a1a1a;
             margin-bottom: 15px;
             font-weight: 700;
+            margin-top: 0%;
         }
 
         .subtitle {
@@ -712,6 +721,7 @@ h1 {
             letter-spacing: 2px;
             text-transform: uppercase;
         }
+        .project1{background-image: url(tipu.jpeg); }
 
         .blue-underline {
             width: 60px;
@@ -720,12 +730,16 @@ h1 {
             margin: 15px auto;
             border-radius: 2px;
         }
+        .project11{
+            background-image: url(tipu.jpeg);}
 
         .carousel-container {
+  
             position: relative;
             width: 100%;
             overflow: hidden;
-            background: white;
+            background: #a4cbcd8a;
+            border: 2px solid #1c6e91;
             border-radius: 15px;
             padding: 40px 20px;
             box-shadow: 0 10px 50px rgba(0, 0, 0, 0.15);
@@ -788,6 +802,7 @@ h1 {
             align-items: center;
             justify-content: center;
         }
+      
 
         .product-images {
             position: relative;
@@ -927,14 +942,14 @@ h1 {
 
         .tagline {
             text-align: center;
-            margin-top: 50px;
-            padding: 30px;
-            background: linear-gradient(135deg, #e8f4f8 0%, #f0f8fb 100%);
-            border: 2px solid #d0e8f2;
-            border-radius: 15px;
-            font-size: 20px;
-            color: #666;
-            font-style: italic;
+    margin-top: 50px;
+    padding: 30px;
+    background: linear-gradient(135deg, #2683a233 0%, #12546c59 100%);
+    border: 2px solid #276884;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #666;
+    font-style: italic;
         }
 
         .tagline strong {
@@ -976,7 +991,7 @@ h1 {
             .product-image-container {
                 height: 150px;
                 margin-left: 26px;
-                width: 62vw;
+                width: 53vw;
             }
 
             .product-image-slide {
@@ -1929,7 +1944,13 @@ footer {
                 width: 100vw;
             opacity: 0.2;
         }
-
+        .about-section{
+            background-image: url(image.png);
+            width: auto;
+            height: 75vh;
+            background-size: 113vh;
+            /* filter: blur(5px); */
+        }
         .logo {
             font-size: 21px;
             font-family: sans-serif;
@@ -1994,8 +2015,8 @@ footer {
                 }
                 .about-section h1 {
                     color: #000000;
-                    font-size: 20px;
-                    font-weight: 700;
+                    font-size: 23px;
+                       font-weight: 900;
                     display: flex;
                     justify-content: center;
                     font-family: Arial, Helvetica, sans-serif;
@@ -2036,7 +2057,7 @@ footer {
                 }
                 .tagline {
                     font-size: 19px;
-                    color: #333;
+                    color: #ffffff;
                     font-weight: 700;
                     letter-spacing: 0.5px;
                     position: relative;
@@ -2202,13 +2223,13 @@ footer {
                 }
                 .cta-button {
                     display: inline-block;
-                    padding: 10px 11px;
+                    padding: 12px 26px;
                     background: linear-gradient(135deg, #ffffff 0%, #f0f9fc 100%);
                     color: #17a2b8;
                     text-decoration: none;
                     border-radius: 50px;
                     font-weight: 800;
-                    width: 37vw;
+                    width: 39vw;
                     height: 4vh;
                     margin-left: 6%;
                     font-size: 8px;
