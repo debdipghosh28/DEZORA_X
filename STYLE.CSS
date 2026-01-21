@@ -2230,7 +2230,7 @@ footer {
                     border-radius: 50px;
                     font-weight: 800;
                     width: 39vw;
-                    height: 4vh;
+                    height: 5vh;
                     margin-left: 6%;
                     font-size: 7px;
                     transition: all 0.4s ease;
@@ -2373,4 +2373,5 @@ footer {
                     transform: scale(1.1);
                 }
             }
+
         
