@@ -25,9 +25,9 @@ body{
     background-size: 210vh;
 }
 .logo{
-    font-size: 20px;
-    font-family: sans-serif;
-    font-weight: 700;
+    width: 10vw;
+    background-size: cover;
+    height: 8vh;
     
 }
 .mainbox{
